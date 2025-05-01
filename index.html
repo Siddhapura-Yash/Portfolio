@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="portfolio.css">
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="">Yash Siddhapura</a>
+    </div>
+
+    <div class="right">
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+
+      <a href="">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Yash Siddhapura 👋</h2>
+        <p class="larger">I'm an enthusiastic learner passionate about electronics, embedded systems, and web development. Skilled in
+          technologies like Arduino, C programming, HTML, CSS, JavaScript, and exploring Node.j. I love
+          building creative projects, blending software with hardware, and continuously improving my skills to work on
+          real-world solutions!</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+
+          <a href="#testimony">
+            <i class="fa-solid fa-robot"></i>
+            <span>Projects</span>
+          </a>
+
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/Photo (HD).png" alt="Yash Siddhapura Headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text larger">
+        I have hands-on experience with front-end technologies and a solid foundation in embedded systems. I am
+        comfortable working with microcontrollers like Arduino and programming languages like C. I am currently
+        enhancing my skills in web development and robotics.
+      </div>
+
+      <div class="cells">
+
+        <div class="cell">
+          <img src="images/C.png" alt="C logo">
+          <span>C language</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/vhdl.png" alt="VHDL logo">
+          <span>VHDL</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/verilog-logo.svg" alt="verilog logo">
+          <span>Verilog</span>
+        </div>
+        
+
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+
+  
+
+        <div class="cell">
+          <img src="images/python.png" alt="python logo">
+          <span>Python</span>
+        </div>
+
+       
+      </div>
+    </section>
+
+    <!-- SECTION 3: Testimony -->
+    <section id="testimony" class="testimony-section">
+      <h1>Projects</h1>
+      <p class="project-title larger">Here are some of my projects showcasing my hands-on experience in electronics and digital design. They include a master-slave robotic arm, a motion detection system with Telegram alerts, and various Verilog modules I’ve learned and implemented.</p>
+      <h2>Robotic Arm</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="images/Final Model.jpg">
+          <p>Slave Robotic Arm to replicate all the movement of master arm</p>
+          <p><a href="https://youtu.be/WwKxOK-ptXw?si=LmXFfIl43Rc6j_a-" target="_blank">Watch working model</a></p>
+        </div>
+
+        <div class="text ">
+          Designed and built a master-slave robotic arm system using Arduino, where movements of the master arm are mirrored by the slave arm in real-time. Incorporated potentiometers for joint position sensing, enabling record and replay functionality for automation tasks. </div>
+      </div>
+    </section>
+ 
+    <!-- SECTION 3: Project 2 -->
+    <section id="testimony" class="testimony-section">
+      <h2 class="project-title2">Alert System</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="images/motion.png">
+          <p>Motion Detection System with Telegram Bot Alerts</p>
+          <p><a href="https://youtu.be/n3t3H6vUBAI?si=ULG7tPN0bhBTUf6O" target="_blank">Watch working model</a></p>
+        </div>
+
+        <div class="text">
+          Developed a motion detection system using an ultrasonic sensor that sends real-time alerts via a Telegram bot when movement is detected. Utilized ESP8266 for wireless communication and ensured reliable remote surveillance capability. </div>
+      </div>
+    </section>
+
+
+        <!-- SECTION 3: Verilog Modules -->
+        <section id="testimony" class="testimony-section">
+          <h2 class="project-title2">Verilog Modules</h2>
+    
+          <div class="group">
+            <div class="person-details">
+              <img src="images/verilog-module.png">
+              <p>Verilog Modules Designed and Simulated for Logic Applications</p>
+              <p><a href="https://github.com/Siddhapura-Yash/Verilog-Modules" target="_blank">Watch out</a></p>
+            </div>
+    
+            <div class="text">
+              I have designed and implemented several Verilog modules as part of my learning, including combinational and sequential circuits like logic gates, multiplexers, flip-flops, counters, ALUs, and finite state machines, gaining practical experience in digital design and simulation. </div>
+          </div>
+        </section>
+
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text larger">
+          Feel free to reach out if you want to collaborate, discuss projects, or just have a tech chat! I am always
+          excited to connect with fellow learners and professionals.
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
