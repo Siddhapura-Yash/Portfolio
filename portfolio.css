@@ -390,3 +390,47 @@
 
     .testimony-section .group 
   }
+.project-card {
+  margin-bottom: 40px;
+}
+
+.project-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+  text-transform: capitalize;
+}
+
+.custom-list {
+  list-style: none;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.custom-list li {
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.custom-list li::before {
+  content: "▹";  /* You can replace this with "➤" or "⟡" or "→" */
+  position: absolute;
+  left: -20px;
+  color: #0077cc; /* Accent color for bullets */
+  font-size: 1.2rem;
+}
+
+.person-details p a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.person-details p a:hover {
+  text-decoration: underline;
+}
+
