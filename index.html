@@ -1,287 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Siddhapura — Home</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        :root {
+            --bg: #f0fdf4;
+            --bg-dim: #f5f7f9;
+            --fg: #3b5844;
+            --fg-dim: #576379;
+            --fg-heavy: #191c22;
+            --primary: #3b5844;
+            --border: #d1e0d5;
+            --radius: 0.3rem;
+            --max-width: 50rem;
+            --font-size: 18px;
+        }
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        html {
+            scroll-behavior: smooth;
+            font-size: var(--font-size);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.5;
+        }
 
-  <link rel="stylesheet" href="portfolio.css">
+        body {
+            margin: 0 auto;
+            max-width: var(--max-width);
+            padding: 0 1rem;
+        }
 
-  <title>Portfolio</title>
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--fg-heavy);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        body > header {
+            padding: 2rem 0 1rem;
+        }
+
+        .site-title {
+            margin-bottom: 0.5rem;
+        }
+
+        .site-title a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links li + li::before {
+            content: "·";
+            margin-right: 0.5rem;
+            color: var(--fg-dim);
+        }
+
+        .external-links {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .resume-btn {
+            background: var(--primary);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .resume-btn:hover {
+            background: #2c4634;
+            text-decoration: none;
+            opacity: 1;
+        }
+
+        main {
+            margin: 2rem 0;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.3rem;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            max-width: 40rem;
+        }
+
+        body > footer {
+            margin: 3rem 0;
+            text-align: center;
+            color: var(--fg-dim);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.8rem;
+            }
+            .external-links {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <!-- NAVBAR -->
-  <nav>
-    <div class="left">
-      <a href="">Yash Siddhapura</a>
-    </div>
+    <header>
+        <h1 class="site-title"><a href="index.html">Yash Siddhapura</a></h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="external-links">
+                <a href="https://github.com/siddhapura-Yash" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/yash-siddhapura" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:yash.siddhapura@email.com">Gmail</a>
+                <a href="resume.pdf" class="resume-btn" target="_blank" rel="noopener">Resume</a>
+            </div>
+        </nav>
+    </header>
 
-    <div class="right">
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-github"></i>
-        <span>Github</span>
-      </a>
+    <main>
+       <section>
 
-      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
-        <span>Linkedin</span>
-      </a>
+    <h2 class="section-title">About Me</h2>
 
-      <a href="">
-        <i class="fa-solid fa-envelope"></i>
-        <span>Email</span>
-      </a>
-    </div>
-  </nav>
+    <p class="intro">
+        FPGA Developer Intern at Vicharak focused on RTL design, FPGA-based computer vision, and high-performance digital systems.
+    </p>
 
-  <main>
-    <!-- SECTION 1: Hero -->
-    <section class="hero-section">
-      <div class="text">
-        <h2>Hi, I'm Yash Siddhapura 👋</h2>
-        <p class="larger">I'm an enthusiastic learner passionate about electronics, embedded systems, and web development. Skilled in
-          technologies like Arduino, C programming, HTML, CSS, JavaScript, and exploring Node.js. I love
-          building creative projects, blending software with hardware, and continuously improving my skills to work on
-          real-world solutions!</p>
+    <br>
 
-        <div class="links">
-          <a href="#skills">
-            <i class="fa-solid fa-code"></i>
-            <span>Skills</span>
-          </a>
+    <p class="intro">
+        Currently developing a stereo vision accelerator using Verilog with Census Transform, AD, and SGM-inspired disparity computation.
+    </p>
 
-          <a href="#testimony">
-            <i class="fa-solid fa-robot"></i>
-            <span>Projects</span>
-          </a>
+    <br>
 
-          <a href="#contact">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Contact</span>
-          </a>
-        </div>
-      </div>
+    <p class="intro">
+        Experienced with UART, I2C, custom FIFOs, and FPGA hardware optimization.
+    </p>
 
-      <div class="headshot">
-        <img src="images/Photo (HD).PNG" alt="Yash Siddhapura Headshot">
-      </div>
-    </section>
+    <br>
 
-    <!-- SECTION 2: Skills -->
-    <section id="skills" class="skills-section">
-      <h2>Skills</h2>
-      <div class="text larger">
-       I have expertise in Verilog and VHDL for digital circuit design and development. I’m skilled in embedded systems, 
-        particularly using Arduino and C programming. Additionally, I’m building my web development skills with HTML, CSS, 
-        and JavaScript, while also exploring robotics for hands-on projects.
-      </div>
-
-      <div class="cells">
-
-        <div class="cell">
-          <img src="images/C.png" alt="C logo">
-          <span>C language</span>
-        </div>
-
-        <div class="cell">
-          <img src="images/vhdl.png" alt="VHDL logo">
-          <span>VHDL</span>
-        </div>
-
-        <div class="cell">
-          <img src="images/verilog-logo.svg" alt="verilog logo">
-          <span>Verilog</span>
-        </div>
-        
-
-        <div class="cell">
-          <img src="images/html-logo.webp" alt="html logo">
-          <span>HTML</span>
-        </div>
-
-        <div class="cell">
-          <img src="images/css-logo.webp" alt="css logo">
-          <span>CSS</span>
-        </div>
-
-        <div class="cell">
-          <img src="images/javascript-logo.webp" alt="javascript logo">
-          <span>JavaScript</span>
-        </div>
-
-  
-
-        <div class="cell">
-          <img src="images/python.png" alt="python logo">
-          <span>Python</span>
-        </div>
-
-       
-      </div>
-    </section>
-
-<!-- SECTION 3: Projects -->
-<section id="projects" class="testimony-section">
-  <h1>Projects</h1>
-  <p class="project-title larger">A collection of my projects demonstrating experience in electronics, embedded systems, and digital design using Verilog and Arduino.</p>
-
-  <!-- Robotic Arm -->
-  <h2>Robotic Arm</h2>
-  <div class="group">
-    <div class="person-details">
-      <img src="images/Final Model.jpg" alt="Robotic Arm Project">
-      <p>Slave Robotic Arm replicating all movements of the master arm</p>
-      <p><a href="https://youtu.be/WwKxOK-ptXw?si=LmXFfIl43Rc6j_a-" target="_blank">Watch the working model</a></p>
-    </div>
-    <div class="text">
-      <ul style="text-align: left; font-size: larger;">
-         <li>Developed a master–slave robotic arm system controlled using Arduino.</li>
-          <li>Captured master arm joint positions through potentiometers for feedback.</li>
-          <li>Enabled real-time replication of movement by servo-driven slave arm.</li>
-          <li>Implemented a record-and-replay feature for task automation.</li>
-          <li>Integrated smooth motion control and joint calibration for precision.</li>
-      </ul>
-    </div>
-  </div>
-
-    <!-- 32-bit ARM-like CPU -->
-  <h2>32-bit ARM-like CPU in Verilog</h2>
-  <div class="group">
-    <div class="person-details">
-      <img src="images/architecture.png" alt="32-bit ARM-like CPU">
-      <p>Custom 32-bit Processor designed with ARM-like Instruction Set</p>
-      <p><a href="https://github.com/Siddhapura-Yash/32_bit_RISC_CPU_Based_on_ARM_Architecture" target="_blank">View on GitHub</a></p>
-    </div>
-    <div class="text">
-      <ul style="text-align: left; font-size: larger;">
-          <li>Built a 32-bit ARM-inspired processor using a modular Verilog architecture.</li>
-          <li>Implemented key components — ALU, register file, control unit, condition flags, and memory interface.</li>
-          <li>Supported arithmetic, logical, branch, and memory instructions.</li>
-          <li>Integrated condition logic for conditional execution like ARM’s status flags.</li>
-          <li>Simulated complete instruction execution and validated control flow using EDA Playground.</li>
-      </ul>
-    </div>
-  </div>
-
-   <!-- SHA-256 Implementation -->
-  <h2>SHA-256 Implementation in Verilog</h2>
-  <div class="group">
-    <div class="person-details">
-      <img src="images/sha256.png" alt="SHA-256 Implementation">
-      <p>Verilog implementation of the SHA-256 Hashing Algorithm</p>
-      <p><a href="https://github.com/Siddhapura-Yash/Vicharak_Task/tree/main/Task-2%20(SHA-256)" target="_blank">View on GitHub</a></p>
-    </div>
-    <div class="text">
-      <ul style="text-align: left; font-size: larger;">
-        <li>Implemented the SHA-256 hash algorithm in Verilog using modular architecture.</li>
-        <li>Designed datapath for message scheduling, round computation, and compression logic.</li>
-        <li>Verified hash outputs against standard test vectors.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 19-bit Custom ISA Architecture -->
-  <h2>19-bit Custom ISA Processor</h2>
-  <div class="group">
-    <div class="person-details">
-      <img src="images/custom-isa.png" alt="Custom 19-bit ISA Processor">
-      <p>Custom 19-bit RISC-style Processor designed in Verilog</p>
-      <p><a href="https://github.com/Siddhapura-Yash/Vicharak_Task/tree/main/Task%201%20(19-bit%20architecture)" target="_blank">View on GitHub</a></p>
-    </div>
-    <div class="text">
-      <ul style="text-align: left; font-size: larger;">
-        <li>Designed and implemented a custom 19-bit instruction set architecture (ISA).</li>
-         <li>Implemented datapath with ALU, register file, and instruction memory.</li>
-           <li>Supported arithmetic, logical, branch, and memory operations.</li>
-          <li>Verified functionality using testbench-driven simulation.</li>
-      </ul>
-    </div>
-  </div>
-  
-  <!-- Motion Alert System -->
-  <h2>Motion Alert System</h2>
-  <div class="group">
-    <div class="person-details">
-      <img src="images/motion.png" alt="Motion Detection">
-      <p>Motion Detection System with Telegram Bot Alerts</p>
-      <p><a href="https://youtu.be/n3t3H6vUBAI?si=ULG7tPN0bhBTUf6O" target="_blank">Watch the working model</a></p>
-    </div>
-    <div class="text">
-      <ul style="text-align: left; font-size: larger;">
-        <li>Developed a motion detection system using ultrasonic sensor and ESP8266.</li>
-        <li>Automatically sends alerts through a Telegram bot on motion detection.</li>
-        <li>Designed compact hardware for low power consumption and fast response.</li>
-        <li>Enabled remote monitoring using Wi-Fi communication.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Verilog Modules -->
-  <h2>Verilog Modules</h2>
-  <div class="group">
-    <div class="person-details">
-      <img src="images/verilog-module.png" alt="Verilog Modules">
-      <p>Collection of Verilog Modules designed for logic applications</p>
-      <p><a href="https://github.com/Siddhapura-Yash/Verilog-Modules" target="_blank">View on GitHub</a></p>
-    </div>
-    <div class="text">
-      <ul style="text-align: left; font-size: larger;">
-        <li>Developed combinational and sequential logic circuits — adders, multiplexers, flip-flops, and counters.</li>
-          <li>Designed an arithmetic logic unit (ALU) supporting multiple arithmetic operations.</li>
-          <li>Created finite state machines (FSMs) for control-based designs.</li>
-          <li>Simulated and verified waveforms using ModelSim.</li>
-      </ul>
-    </div>
-  </div>
+    <p class="intro">
+        Built projects including a 32-bit ARM-like CPU, SHA-256 accelerator, VGA controller, and robotic systems.
+    </p>
 
 </section>
+    </main>
 
-
-
-    <!-- SECTION 4: Contact -->
-    <section id="contact" class="contact-section">
-      <h2>Contact</h2>
-
-      <div class="group">
-        <div class="text larger">
-          Feel free to reach out if you want to collaborate, discuss projects, or just have a tech chat! I am always
-          excited to connect with fellow learners and professionals.
-        </div>
-
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name">
-
-          <label for="email">Email</label>
-          <input type="email" id="email">
-
-          <label for="message">Message</label>
-          <textarea id="message" cols="30" rows="10"></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+  <footer>
+      <p>
+          ⚡ Building hardware for real-time systems.
+      </p>
+  </footer>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-

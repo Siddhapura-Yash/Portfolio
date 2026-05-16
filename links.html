@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Siddhapura — Links</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #f0fdf4;
+            --bg-dim: #f5f7f9;
+            --fg: #3b5844;
+            --fg-dim: #576379;
+            --fg-heavy: #191c22;
+            --primary: #3b5844;
+            --border: #d1e0d5;
+            --radius: 0.3rem;
+            --max-width: 50rem;
+            --font-size: 18px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: var(--font-size);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.5;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: var(--max-width);
+            padding: 0 1rem;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--fg-heavy);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        body > header {
+            padding: 2rem 0 1rem;
+        }
+
+        .site-title {
+            margin-bottom: 0.5rem;
+        }
+
+        .site-title a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links li + li::before {
+            content: "·";
+            margin-right: 0.5rem;
+            color: var(--fg-dim);
+        }
+
+        .external-links {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .resume-btn {
+            background: var(--primary);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .resume-btn:hover {
+            background: #2c4634;
+            text-decoration: none;
+            opacity: 1;
+        }
+
+        main {
+            margin: 2rem 0;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.3rem;
+        }
+
+        .sub-section {
+            margin-top: 2rem;
+        }
+
+        .sub-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            color: var(--fg-heavy);
+        }
+
+        .links-list {
+            list-style: none;
+        }
+
+        .links-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        .links-list .note {
+            color: var(--fg-dim);
+            font-style: italic;
+            margin-left: 0.3rem;
+        }
+
+        body > footer {
+            margin: 3rem 0;
+            text-align: center;
+            color: var(--fg-dim);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.8rem;
+            }
+            .external-links {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-title"><a href="index.html">Yash Siddhapura</a></h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="external-links">
+                <a href="https://github.com/siddhapura-Yash" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/yash-siddhapura" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:yash.siddhapura@email.com">Gmail</a>
+                <a href="resume.pdf" class="resume-btn" target="_blank" rel="noopener">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="section-title">Links</h2>
+
+            <!-- Projects & Code
+            <div class="sub-section">
+                <h3 class="sub-title">Projects & Code</h3>
+                <ul class="links-list">
+                    <li>
+                        <strong>ARM‑inspired 32‑bit RISC CPU</strong><br>
+                        <a href="https://github.com/Siddhapura-Yash/32_bit_RISC_CPU_Based_on_ARM_Architecture" target="_blank" rel="noopener">
+                            github.com/Siddhapura-Yash/ARM_inspired_CPU
+                        </a>
+                    </li>
+                    <li>
+                        <strong>19‑bit Custom ISA Processor</strong><br>
+                        <a href="https://github.com/Siddhapura-Yash/Vicharak_Task/tree/main/Task%201%20(19-bit%20architecture)" target="_blank" rel="noopener">
+                            github.com/Siddhapura-Yash/19-bit_custom_ISA
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+
+            <!-- Learning Resources -->
+            <div class="sub-section">
+                <h3 class="sub-title">Verilog Learning Resources</h3>
+                <ul class="links-list">
+                    <li>
+                        <strong>NPTEL Course (YouTube Playlist)</strong><br>
+                        <a href="https://www.youtube.com/playlist?list=PLRsFfXmDi9IYCNlvNjrsD8bLMmNE0UxBH" target="_blank" rel="noopener">
+                            Verilog HDL by Prof. Indranil Sengupta (IIT Kharagpur)
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <strong>Book: “Verilog HDL” by Samir Palnitkar</strong><br>
+                        <span class="note">Recommended for beginners and as a reference guide.</span>
+                    </li> -->
+                    <li>
+                        <strong>Practice: HDLBits Verilog Solutions</strong><br>
+                        <a href="https://github.com/Siddhapura-Yash/HDLBits-Verilog-Solutions" target="_blank" rel="noopener">
+                            github.com/Siddhapura-Yash/HDLBits-Verilog-Solutions
+                        </a>
+                    </li>
+                    <li>
+                        <strong>Verilog Modules Collection</strong><br>
+                        <a href="https://github.com/Siddhapura-Yash/Verilog-Modules" target="_blank" rel="noopener">
+                            github.com/Siddhapura-Yash/Verilog-Modules
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+                <!-- <div class="project-card">
+                    <h3>Verilog Modules Collection</h3>
+                    <p>Library of combinational/sequential circuits: adders, multiplexers, flip‑flops, counters, ALU, FSMs.</p>
+                    <div class="links">
+                        <a href="https://github.com/Siddhapura-Yash/Verilog-Modules" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div>
+
+            <!-- Blog & Other -->
+            <div class="sub-section">
+                <h3 class="sub-title">Blog & Other</h3>
+                <ul class="links-list">
+                    <li>
+                        <strong>Why FPGAs Are Powerful for AI</strong><br>
+                        <a href="https://verilogfpga-tutorials.blogspot.com/2026/03/why-fpgas-are-powerful-for-ai.html" target="_blank" rel="noopener">
+                            verilogfpga-tutorials.blogspot.com
+                        </a>
+                    </li>
+                    <li>
+                        <strong>Main GitHub Profile</strong><br>
+                        <a href="https://github.com/siddhapura-Yash" target="_blank" rel="noopener">
+                            github.com/siddhapura-Yash
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+  <footer>
+      <p>
+          ⚡ Building hardware for real-time systems.
+      </p>
+  </footer>
+</body>
+</html>

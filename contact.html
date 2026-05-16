@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Siddhapura — Contact</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #f0fdf4;
+            --bg-dim: #f5f7f9;
+            --fg: #3b5844;
+            --fg-dim: #576379;
+            --fg-heavy: #191c22;
+            --primary: #3b5844;
+            --border: #d1e0d5;
+            --radius: 0.3rem;
+            --max-width: 50rem;
+            --font-size: 18px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: var(--font-size);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.5;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: var(--max-width);
+            padding: 0 1rem;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--fg-heavy);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        body > header {
+            padding: 2rem 0 1rem;
+        }
+
+        .site-title {
+            margin-bottom: 0.5rem;
+        }
+
+        .site-title a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links li + li::before {
+            content: "·";
+            margin-right: 0.5rem;
+            color: var(--fg-dim);
+        }
+
+        .external-links {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .resume-btn {
+            background: var(--primary);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .resume-btn:hover {
+            background: #2c4634;
+            text-decoration: none;
+            opacity: 1;
+        }
+
+        main {
+            margin: 2rem 0;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.3rem;
+        }
+
+        .contact-info {
+            font-size: 1rem;
+        }
+
+        body > footer {
+            margin: 3rem 0;
+            text-align: center;
+            color: var(--fg-dim);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.8rem;
+            }
+            .external-links {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-title"><a href="index.html">Yash Siddhapura</a></h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="external-links">
+                <a href="https://github.com/siddhapura-Yash" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/siddhapurayash/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:yash.siddhapurayash09@email.com">Gmail</a>
+                <a href="resume.pdf" class="resume-btn" target="_blank" rel="noopener">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-info">
+                Feel free to reach out for collaborations or just a tech chat.<br>
+                📧 <a href="mailto:siddhapurayash09@gmail.com">siddhapurayash09@gmail.com</a><br>
+
+                💼 <a href="https://linkedin.com/in/yash-siddhapura" target="_blank" rel="noopener">LinkedIn</a><br>
+
+                🐙 <a href="https://github.com/siddhapura-Yash" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </section>
+    </main>
+
+  <footer>
+      <p>
+          ⚡ Building hardware for real-time systems.
+      </p>
+  </footer>
+</body>
+</html>

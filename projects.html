@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Siddhapura — Projects</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #f0fdf4;
+            --bg-dim: #f5f7f9;
+            --fg: #3b5844;
+            --fg-dim: #576379;
+            --fg-heavy: #191c22;
+            --primary: #3b5844;
+            --border: #d1e0d5;
+            --radius: 0.3rem;
+            --max-width: 50rem;
+            --font-size: 18px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: var(--font-size);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.5;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: var(--max-width);
+            padding: 0 1rem;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--fg-heavy);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        body > header {
+            padding: 2rem 0 1rem;
+        }
+
+        .site-title {
+            margin-bottom: 0.5rem;
+        }
+
+        .site-title a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links li + li::before {
+            content: "·";
+            margin-right: 0.5rem;
+            color: var(--fg-dim);
+        }
+
+        .external-links {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .resume-btn {
+            background: var(--primary);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .resume-btn:hover {
+            background: #2c4634;
+            text-decoration: none;
+            opacity: 1;
+        }
+
+        main {
+            margin: 2rem 0;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.3rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: var(--bg-dim);
+            border-radius: var(--radius);
+            padding: 1.2rem;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            color: var(--fg-dim);
+        }
+
+        .project-card .links {
+            margin-top: 0.8rem;
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        body > footer {
+            margin: 3rem 0;
+            text-align: center;
+            color: var(--fg-dim);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.8rem;
+            }
+            .external-links {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-title"><a href="index.html">Yash Siddhapura</a></h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="external-links">
+                <a href="https://github.com/siddhapura-Yash" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/yash-siddhapura" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:yash.siddhapura@email.com">Gmail</a>
+                <a href="resume.pdf" class="resume-btn" target="_blank" rel="noopener">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <!-- Stereo Vision Accelerator (new) -->
+                <div class="project-card">
+                    <h3>Stereo Vision Accelerator</h3>
+                    <p>FPGA‑based stereo matching pipeline using Census Transform, AD cost, cost aggregation and SGM‑inspired disparity computation. Developed on Vaaman board.</p>
+                    <div class="links">
+                        <span style="color: var(--fg-dim); font-size: 0.9rem;">(link coming soon)</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>ARM Inspired 32-bit RISC CPU </h3>
+                    <p>Custom 32‑bit processor in Verilog, inspired by ARM architecture. Includes ALU, register file, control unit, and memory interface.</p>
+                    <div class="links">
+                        <a href="https://github.com/Siddhapura-Yash/32_bit_RISC_CPU_Based_on_ARM_Architecture" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div>
+                <!-- <div class="project-card">
+                    <h3>FCP6 Protocol</h3>
+                    <p>Custom high‑speed half‑duplex FPGA communication protocol implemented in Verilog.</p>
+                    <div class="links">
+                        <a href="https://github.com/Siddhapura-Yash/fcp6-protocol" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div> -->
+                <!-- <div class="project-card">
+                    <h3>Synchronous & Asynchronous FIFO</h3>
+                    <p>Verified Verilog IPs for synchronous and asynchronous FIFO buffers, with Gray‑code CDC, ready for FPGA integration.</p>
+                    <div class="links">
+                        <a href="https://github.com/Siddhapura-Yash/synchronous_fifo_ip" target="_blank" rel="noopener">Sync FIFO ↗</a>
+                        <a href="https://github.com/Siddhapura-Yash/asynchronous_fifo_ip" target="_blank" rel="noopener">Async FIFO ↗</a>
+                    </div>
+                </div> -->
+                <div class="project-card">
+                    <h3>SHA‑256 in Verilog</h3>
+                    <p>Modular Verilog implementation of the SHA‑256 hash algorithm with verified test vectors.</p>
+                    <div class="links">
+                        <a href="https://github.com/Siddhapura-Yash/Vicharak_Task/tree/main/Task-2%20(SHA-256)" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>19‑bit Custom ISA Processor</h3>
+                    <p>RISC‑style processor with a custom 19‑bit instruction set, designed and simulated in Verilog.</p>
+                    <div class="links">
+                        <a href="https://github.com/Siddhapura-Yash/Vicharak_Task/tree/main/Task%201%20(19-bit%20architecture)" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Master‑Slave Robotic Arm</h3>
+                    <p>Arduino‑based robotic arm that replicates master movements in real time, with record‑and‑replay.</p>
+                    <div class="links">
+                        <a href="https://youtu.be/WwKxOK-ptXw" target="_blank" rel="noopener">Demo ↗</a>
+                        <a href="https://github.com/Siddhapura-Yash/Master-Slave-Robotic-Arm" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div>
+                <!-- <div class="project-card">
+                    <h3>Motion Alert System</h3>
+                    <p>IoT motion detector using ESP8266 + ultrasonic sensor, with Telegram bot alerts.</p>
+                    <div class="links">
+                        <a href="https://youtu.be/n3t3H6vUBAI" target="_blank" rel="noopener">Demo ↗</a>
+                    </div>
+                </div> -->
+                <div class="project-card">
+                    <h3>VGA Signal Generator</h3>
+                    <p>FPGA‑based VGA controller that animates a bouncing ball (C++/Verilog).</p>
+                    <div class="links">
+                        <a href="https://github.com/Siddhapura-Yash/VGA_Bouncing_Ball" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div>
+                <!-- <div class="project-card">
+                    <h3>Verilog Modules Collection</h3>
+                    <p>Library of combinational/sequential circuits: adders, multiplexers, flip‑flops, counters, ALU, FSMs.</p>
+                    <div class="links">
+                        <a href="https://github.com/Siddhapura-Yash/Verilog-Modules" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+  <footer>
+      <p>
+          ⚡ Building hardware for real-time systems.
+      </p>
+  </footer>
+</body>
+</html>
